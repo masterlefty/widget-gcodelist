@@ -435,10 +435,10 @@ cprequire_test(["inline:com-chilipeppr-widget-gcode"], function (gcode) {
 cpdefine("inline:com-chilipeppr-widget-gcode", ["chilipeppr_ready", "waypoints", "jqueryuiResizeable", "jquerycookie"], function () {
     return {
         id: "com-chilipeppr-widget-gcode",
-        url: "http://raw.githubusercontent.com/chilipeppr/widget-gcodelist/master/auto-generated-widget.html",       // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
-        fiddleurl: "http://ide.c9.io/chilipeppr/widget-gcodelist", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
-        githuburl: "http://github.com/chilipeppr/widget-gcodelist", // The backing github repo
-        testurl: "http://widget-gcodelist-chilipeppr.c9users.io/widget.html",   // The standalone working widget so can view it working by itself
+        url: "http://raw.githubusercontent.com/masterlefty/widget-gcodelist/master/auto-generated-widget.html",       // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
+        fiddleurl: "http://ide.c9.io/masterlefty/widget-gcodelist", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
+        githuburl: "http://github.com/masterlefty/widget-gcodelist", // The backing github repo
+        testurl: "http://widget-gcodelist-masterlefty.c9users.io/widget.html",   // The standalone working widget so can view it working by itself
         name: "Widget / Gcode v3",
         desc: "The Gcode widget shows you the Gcode loaded into your workspace, lets you send it to the serial port, get back per line status, see an estimated length of time to execute the Gcode, navigate to the XYZ position of a specific line, and much more.",
         publish: {
@@ -3470,10 +3470,10 @@ cpdefine("inline:com-chilipeppr-widget-gcode", ["chilipeppr_ready", "waypoints",
 </head>
 
 <body>
-
+    
     <!--Put HTML Contents of Widget Here-->
-    <div id="com-chilipeppr-widget-gcodeviewer" class="panel panel-default com-chilipeppr-widget-gcode ">
-        <div class="panel-heading">
+    <div id="com-chilipeppr-widget-gcodeviewer" class="panel panel-default com-chilipeppr-widget-gcode">
+        <div class="panel-heading" style="background: #99ccff">
             <div class="" style="padding-bottom:10px;"><span class="panel-title">Gcode</span></div>
             <div class="btn-toolbar" role="toolbar" style="position:absolute;right:0px;top:0px;padding:10px 15px;">
                 <div class="btn-group plannerpause" data-toggle="popover" data-content="This indicator shows that we're being asked to pause our sending of commands to the CNC controller so we don't overfill the buffer.">
@@ -3645,7 +3645,7 @@ cpdefine("inline:com-chilipeppr-widget-gcode", ["chilipeppr_ready", "waypoints",
             </table>
         </div>
         <!-- body wrapper com-chilipeppr-widget-gcode-body-wrapper -->
-        <div id="com-chilipeppr-widget-gcode-footer" class="panel-footer ">
+        <div id="com-chilipeppr-widget-gcode-footer" class="panel-footer">
             <div class="row ">
                 <div class="col-xs-12 stats-hdr" style="margin-bottom:5px;" data-toggle="popover" data-container="body" data-placement="auto top" data-trigger="hover click" data-delay="500" data-html="true" data-title="Explaining Status Steps"><span class="glyphicon glyphicon-ok gcode-sent"></span> Sent <span class="glyphicon glyphicon-ok gcode-queued"></span> Queued <span class="glyphicon glyphicon-ok gcode-written"></span> Written <span class="glyphicon glyphicon-ok gcode-completed"></span>                    Completed <span class="glyphicon glyphicon-ok gcode-executed"></span> Executed
                     <!-- <span class="glyphicon glyphicon-ok gcode-error"></span> Error/Unsupported Command --></div>
